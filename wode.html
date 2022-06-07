@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon.ico">
+    <title>登录古诗文网</title>
+    <script>
+        window.onload = function () {
+
+            function _yzm() {
+                var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                var yzm = "";
+                // var p=0;
+                for (var i = 8; i < 12; i++) {
+                    p = Math.ceil(Math.random() * 1000) % 36;
+                    yzm = yzm + str.substr(p, 1);
+                }
+                return yzm;
+            }
+            var str = _yzm();
+
+            // 将通过id获取dom封装成函数
+            function $(_id) {
+                return document.getElementById(_id)
+            }
+            // 获取dom对象
+            var form1 = $("form1");
+            var zh = $("zh");
+            var zhTips = $("zhTips");
+            var mm = $("mm");
+            var mmTips = $("mmTips");
+            var yzm = $("yzm");
+            var yzmTips = $("yzmTips");
+            var submit = $("submit");
+            var getYzm = $("getYzm")
+            getYzm.value = str
+            // 设置表单登录报错验证
+            form1.onsubmit = function () {
+                // 账号为空报错
+                if (zh.value == "") {
+                    zhTips.innerText = "ㄨ 账号不能为空";
+                    // 阻止页面跳转
+                    event.preventDefault();
+                }
+                if (mm.value == "") {
+                    mmTips.innerText = "ㄨ 密码不能为空";
+                    event.preventDefault();
+                }
+                if (yzm.value == "") {
+                    yzmTips.innerText = "ㄨ验证码不能为空";
+                    event.preventDefault()
+                }
+                if (yzm.value != str) {
+                    yzmTips.innerText = "ㄨ验证码错误";
+                    event.preventDefault()
+                }
+
+            }
+            //账号框获得焦点清楚错误提示
+            zh.onfocus = function () {
+                zhTips.innerText = "";
+            }
+
+            mm.onfocus = function () {
+                mmTips.innerText = "";
+            }
+            yzm.onfocus = function () {
+                yzmTips.innerText = "";
+            }
+
+            // 账号长度低于6个字符报错
+            zh.onchange = function () {
+                if (zh.value.length < 6) {
+                    zhTips.innerText = "账号长度不能低于6位"
+                }
+            }
+            mm.onchange = function () {
+                if (mm.value.length < 6) {
+                    mmTips.innerText = "密码长度不能低于6位"
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e1e0c7;
+        }
+
+        .banner {
+            background-color: #5d6146;
+            color: #f0efe2;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .banner table tr td a {
+            color: #f0efe2;
+        }
+
+        .bd input {
+            height: 25px;
+            border-width: 0;
+        }
+
+        .an {
+            color: #676767;
+            background-color: #e1e0c7;
+        }
+
+        .dl {
+            background-color: #5d6146;
+            color: #ffffff;
+            font-size: 15px;
+            width: 60px;
+        }
+
+        span {
+            color: #ff0000;
+        }
+
+        #getYzm {
+            color: #0044ff;
+            background-color: #e1e0c7;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="banner">
+        <table width="1000" align="center" cellspacing="0" cellpadding="0">
+            <tr align="center" height="50">
+                <td width="110" align="left">
+                    <font size="5"><b><a href="index.html">古诗文网</a> </b></font>
+                </td>
+                <td width="50">
+                    <font><a href="index.html">推荐</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="shiwen.html"> 诗文</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="mingju.html">名句</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="zuozhe.html">作者</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="guji.html">古籍</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="wode.html">我的</a></font>
+                </td>
+                <td align="right">
+                    <form action="">
+                        <input type="text" size="31">
+                        <input type="button" value="搜索">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <table width="1000" align="center">
+        <tr>
+            <td colspan="3">
+                <h2>
+                    <font color="#676767">快捷登录古诗文网</font>
+                </h2>
+                <hr>
+                <br>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="#5d6146" width="250">
+                <p>
+                    <font size="4" color="#f0efe2">微信扫码登录</font>
+                </p>
+                <img src=" image/saomao.png" alt="" width="200">
+                <br><br>
+            </td>
+            <td width="30"></td>
+            <td align="left" valign="top">
+                <!-- 表单部分开始 -->
+
+                <form class="bd" id="form1" action="https://www.baidu.com">
+                    账&nbsp;&nbsp;&nbsp;&nbsp;号 &nbsp;&nbsp;<input type="text" id="zh" size="30">
+                    <span id="zhTips"></span>
+                    <br><br>
+                    密&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;<input type="password" id="mm" size="30">
+                    <span id="mmTips"></span>
+                    <br><br>
+                    验证码&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="8" id="yzm" height="5">
+                    &nbsp;&nbsp;&nbsp;<input type="text" id="getYzm" value="" size="2">
+
+                    <span id="yzmTips"></span>
+                    <br><br>
+                    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="" class="an">找回密码</a>
+                    <font size="3">|</font>
+                    <a href="" class="an">马上注册</a>
+
+                    <br><br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+                    <input class="dl" id="submit" type="submit" value="登录">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <br><br>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <font size="1" color="#676767">© 2022 古诗文网 | 诗文 | 名句 | 作者 | 古籍 | 纠错</font>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古籍</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #e1e0c7;
+        }
+
+        .banner {
+            background-color: #5d6146;
+            color: #f0efe2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .banner table tr td a {
+            color: #f0efe2;
+        }
+
+        .cd {
+            color: #19537d;
+        }
+
+        .jieshi {
+            font-size: 14px;
+            line-height: 28px;
+            width: 93%;
+
+            margin: 0px 20px;
+        }
+
+        .lj tr .bor {
+            color: #000;
+            border-style: none;
+            font-size: larger;
+        }
+
+        .lj tr td {
+            color: #19537d;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #dad9d1;
+            font-size: smaller;
+            text-align: center;
+        }
+
+        .jieshi a {
+            color: #19537d;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="banner">
+        <table width="1000" align="center" cellspacing="0" cellpadding="0">
+            <tr align="center" height="50">
+                <td width="110" align="left">
+                    <font size="5"><b><a href="index.html">古诗文网</a> </b></font>
+                </td>
+                <td width="50">
+
+                    <font><a href="index.html">推荐</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="shiwen.html"> 诗文</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="mingju.html">名句</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="zuozhe.html">作者</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="guji.html">古籍</a></font>
+                </td>
+                <td width="50">
+                    <font><a href="wode.html">我的</a></font>
+                </td>
+                <td align="right">
+                    <form action="">
+                        <input type="text" size="31">
+                        <input type="button" value="搜索">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <table width="1000" align="center" cellspacing="0" cellpadding="0">
+        <tr align="center">
+            <td width="680" align="center">
+
+                <!-- 推荐诗文 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr align="center">
+                        <td align="left" colspan="2">
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <font size="5"><b>不限</b></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <hr width="90%" color="#dad9d1" size="1"><br>
+                            &nbsp;&nbsp;
+                            <a href="" class="cd">
+                                <font size="3">经部:</font> &nbsp;
+                            </a>
+                            <a href="" class="cd">易类 &nbsp;</a>
+                            <a href="" class="cd">书类 &nbsp;</a>
+                            <a href="" class="cd">诗类 &nbsp;</a>
+                            <a href="" class="cd">礼类 &nbsp;</a>
+                            <a href="" class="cd">春秋类 &nbsp;</a>
+                            <a href="" class="cd">孝经类 &nbsp;</a>
+                            <a href="" class="cd">五经总义类 &nbsp;</a>
+                            <a href="" class="cd">四书类 &nbsp;</a>
+                            <a href="" class="cd">乐类 &nbsp;</a>
+                            <a href="" class="cd">小学类 &nbsp;</a>
+                            <hr width="90%" color="#dad9d1" size="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+
+                            <a href="" class="cd">
+                                <font size="3">史部：</font>
+                            </a>
+                            <a href="" class="cd">正史类 &nbsp;</a>
+                            <a href="" class="cd">编年类 &nbsp;</a>
+                            <a href="" class="cd">纪事本末类 &nbsp;</a>
+                            <a href="" class="cd">杂史类 &nbsp;</a>
+                            <a href="" class="cd">别史类 &nbsp;</a>
+                            <a href="" class="cd">诏令奏议类 &nbsp;</a>
+                            <a href="" class="cd">传记类 &nbsp;</a>
+                            <a href="" class="cd">史钞类 &nbsp;</a>
+                            <hr width="90%" color="#dad9d1" size="1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            &nbsp; &nbsp;
+                            <a href="" class="cd">
+                                <font size="3">子部:</font> &nbsp;
+                            </a>
+                            <a href="" class="cd">儒家类 &nbsp;</a>
+                            <a href="" class="cd">兵家类 &nbsp;</a>
+                            <a href="" class="cd">法家类 &nbsp;</a>
+                            <a href="" class="cd">农家类 &nbsp;</a>
+                            <a href="" class="cd">医家类 &nbsp;</a>
+                            <a href="" class="cd">天文算法类 &nbsp;</a>
+                            <a href="" class="cd">五经总义类 &nbsp;</a>
+                            <a href="" class="cd">术数类 &nbsp;</a>
+                            &nbsp;&nbsp;&nbsp;
+                            <hr width="90%" color="#dad9d1" size="1">
+                        </td>
+                    </tr>
+                </table> <br><br>
+
+                <!-- 论语 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>论语 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《论语》是儒家学派的经典著作之一，由孔子的弟子及其再传弟子编撰而成。它以语录体和对话文体为主，记录了孔子及其弟子言行，集中体现了孔子的政治主张、伦理思想、道德观念及教育原则等。与《大学》《中庸》《孟子》《诗经》《尚书》《礼记》《易经》《春秋》并称“四书五经”。通行本《论语》共二十篇。
+                                <a href="">▶156条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+
+
+                <!-- 史记 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>史记</b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《史记》是由司马迁撰写的中国第一部纪传体通史。记载了上自上古传说中的黄帝时代，下至汉武帝元狩元年间共3000多年的历史（哲学、政治、经济、军事等）。《史记》最初没有固定书名，或称“太史公书”，或称“太史公传”，也省称“太史公”。“史记”本是古代史书通称，从三国时期开始，“史记”由史书的通称逐渐成为“太史公书”的专称。《史记》与后来的《汉书》（班固）、《后汉书》（范晔、司马彪）、《三国志》（陈寿）合称“前四史”。刘向等人认为此书“善序事理，辩而不华，质而不俚”。与司马光的《资治通鉴》并称“史学双璧”。
+                                <a href="">▶101条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <!-- 老子 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>老子 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《论语》是儒家学派的经典著作之一，由孔子的弟子及其再传弟子编撰而成。它以语录体和对话文体为主，记录了孔子及其弟子言行，集中体现了孔子的政治主张、伦理思想、道德观念及教育原则等。与《大学》《中庸》《孟子》《诗经》《尚书》《礼记》《易经》《春秋》并称“四书五经”。通行本《论语》共二十篇。
+                                <a href="">▶156条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+
+                <!-- 三十六计 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>三十六计 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《三十六计》或称“三十六策”，是指中国古代三十六个兵法策略，语源于南北朝，成书于明清。它是根据我国古代卓越的军事思想和丰富的斗争经验总结而成的兵书，是中华民族悠久文化遗产之一。
+                                <a href="">▶38条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <!-- 周易 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>周易 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《周易》即《易经》，《三易》之一（另有观点：认为易经即三易，而非周易），是传统经典之一，相传系周文王姬昌所作，内容包括《经》和《传》两个部分。《经》主要是六十四卦和三百八十四爻，卦和爻各有说明（卦辞、爻辞），作为占卜之用。《周易》没有提出阴阳与太极等概念，讲阴阳与太极的是被道家与阴阳家所影响的《易传》。《传》包含解释卦辞和爻辞的七种文辞共十篇，统称《十翼》，相传为孔子所撰。《周易》是中国传统思想文化中自然哲学与人文实践的理论根源，是古代汉民族思想、智慧的结晶，被誉为“大道之源”。内容极其丰富，对中国几千年来的政治、经济、文化等各个领域都产生了极其深刻的影响。《易经》为群经之首，设教之书。
+                                <a href="">▶9条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+                <!-- 周易 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>周易 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《周易》即《易经》，《三易》之一（另有观点：认为易经即三易，而非周易），是传统经典之一，相传系周文王姬昌所作，内容包括《经》和《传》两个部分。《经》主要是六十四卦和三百八十四爻，卦和爻各有说明（卦辞、爻辞），作为占卜之用。《周易》没有提出阴阳与太极等概念，讲阴阳与太极的是被道家与阴阳家所影响的《易传》。《传》包含解释卦辞和爻辞的七种文辞共十篇，统称《十翼》，相传为孔子所撰。《周易》是中国传统思想文化中自然哲学与人文实践的理论根源，是古代汉民族思想、智慧的结晶，被誉为“大道之源”。内容极其丰富，对中国几千年来的政治、经济、文化等各个领域都产生了极其深刻的影响。《易经》为群经之首，设教之书。
+                                <a href="">▶9条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+                <!-- 孙子兵法 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b> 孙子兵法 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《孙子兵法》又称《孙武兵法》、《吴孙子兵法》、《孙子兵书》、《孙武兵书》等，是中国现存最早的兵书，也是世界上最早的军事著作，早于克劳塞维茨《战争论》约2300年，被誉为“兵学圣典”。共有六千字左右，一共十三篇。作者为春秋时祖籍齐国乐安的吴国将军孙武。《孙子兵法》是中国古代军事文化遗产中的璀璨瑰宝，优秀传统文化的重要组成部分，是古代军事思想精华的集中体现。
+                                <a href="">▶44条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+                <!-- 山海经 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b> 山海经 </b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《山海经》是中国志怪古籍，大体是战国中后期到汉代初中期的楚国或巴蜀人所作。也是一部荒诞不经的奇书。该书作者不详，古人认为该书是“战国好奇之士取《穆王传》 , 杂录《庄》 、
+                                《列》 、 《离骚》 、 《周书》 、 《晋乘》以成者”
+                                。现代学者也均认为成书并非一时，作者亦非一人。《山海经》全书现存18篇，其余篇章内容早佚。原共22篇约32650字。共藏山经5篇、海外经4篇、海内经5篇、大荒经4篇。《汉书·艺文志》作13篇，未把晚出的大荒经和海内经计算在内。山海经内容主要是民间传说中的地理知识，包括山川、道里、民族、物产、药物、祭祀、巫医等。保存了包括夸父逐日、女娲补天、精卫填海、大禹治水等不少脍炙人口的远古神话传说和寓言故事。
+                                <a href="">▶46条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+                <!-- 资治通鉴 -->
+                <table align="center" bgcolor="#f0efe2" width="680" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td> &nbsp; </td>
+                    </tr>
+
+                    <tr>
+                        <td width="100%">
+                            <p align="left">
+                                <font size="4" color="#19537d"> &nbsp;&nbsp;&nbsp;&nbsp;<b>资治通鉴</b></font><img
+                                    src="image/sy.png" alt="" width="17">
+                            </p>
+
+
+                            <p class="jieshi" align="left">
+                                《资治通鉴》（常简作《通鉴》），是由北宋史学家司马光主编的一部多卷本编年体史书，共294卷，历时十九年完成。主要以时间为纲，事件为目，从周威烈王二十三年（公元前403年）写起，到五代后周世宗显德六年（公元959年）征淮南停笔，涵盖十六朝1362年的历史。在这部书里，编者总结出许多经验教训，供统治者借鉴，宋神宗认为此书“鉴于往事，有资于治道”，即以历史的得失作为鉴诫来加强统治，所以定名为《资治通鉴》。
+                                <a href="">▶71条名句</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp;&nbsp;&nbsp;
+                            <a href=""><img src="image/xin.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/xz.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/copy.png" alt="" width="20"></a>
+                            &nbsp;
+                            <a href=""><img src="image/tool.png" alt="" width="20"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br><br>
+
+
+
+                <!-- 下一页 -->
+                <table width="680">
+                    <tr>
+                        <td width="400" height="40" align="center" bgcolor="#e7e6d8"><a href="#">下一页</a></td>
+                        <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td bgcolor="#fbfbf6" align="center">&nbsp;1&nbsp;</td>
+                        <td>&nbsp;/4页</td>
+                        <td align="center" bgcolor="#e7e6d8">上一页 </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+
+
+            </td>
+
+            <td></td>
+
+            <td width="280" valign="top">
+                <!-- 古籍 -->
+                <a href="">
+                    <table class="lj" align="center" cellpadding="2" width="100%" bgcolor="#f0efe2" cellspacing="10"
+                        width="90%">
+                        <tr>
+                            <td align="center" class="bor">
+                                <h3 class="bor">古籍</h3>
+                            </td>
+
+                        </tr>
+                        <tr align="center">
+                            <td>论语</td>
+                            <td>史记</td>
+                            <td>周易</td>
+                        </tr>
+                        <tr>
+                            <td>易传</td>
+                            <td>孟子</td>
+                            <td>左传</td>
+                        </tr>
+                        <tr>
+                            <td>大学</td>
+                            <td>中庸</td>
+                            <td>尚书</td>
+                        </tr>
+                        <tr>
+                            <td>礼记</td>
+                            <td>周礼</td>
+                            <td>仪礼</td>
+                        </tr>
+
+                        <tr>
+                            <td>庄子</td>
+                            <td>老子</td>
+                            <td>孟子</td>
+                        </tr>
+                        <tr>
+                            <td>墨子</td>
+                            <td>荀子</td>
+                            <td>列子</td>
+                        </tr>
+                        <tr>
+                            <td>管子</td>
+                            <td>吴子</td>
+                            <td>素书</td>
+                        </tr>
+                        <tr>
+                            <td>孝经</td>
+                            <td>将苑</td>
+                            <td>六韬</td>
+                        </tr>
+                        <tr>
+                            <td>反经</td>
+                            <td>冰鉴</td>
+                            <td>论衡</td>
+                        </tr>
+                        <tr>
+                            <td>智囊</td>
+                            <td>汉书</td>
+                            <td>韩非子</td>
+                        </tr>
+                        <tr>
+                            <td>韩非子</td>
+                            <td>淮南子</td>
+                            <td>尉缭子</td>
+                        </tr>
+                        <tr>
+                            <td>山海经</td>
+                            <td>三字经</td>
+                            <td>百家姓</td>
+                        </tr>
+                        <tr>
+                            <td>千字文</td>
+                            <td>鬼谷子</td>
+                            <td>伤寒论</td>
+                        </tr>
+                        <tr>
+                            <td>商君书</td>
+                            <td>战国策</td>
+                            <td>三国志</td>
+                        </tr>
+                        <tr>
+                            <td>司马法</td>
+                            <td>逸周书</td>
+                            <td>搜神记</td>
+                        </tr>
+                        <tr>
+                            <td>金刚经</td>
+                            <td>地藏经</td>
+                            <td>弟子规</td>
+                        </tr>
+                        <tr>
+                            <td>菜根谭</td>
+                            <td>水经注</td>
+                            <td>孙子兵法</td>
+                        </tr>
+                        <tr>
+                            <td>三十六计</td>
+                            <td>资治通鉴</td>
+                            <td>续资治通</td>
+                        </tr>
+                        <tr>
+                            <td>黄帝内经</td>
+                            <td>本草纲目</td>
+                            <td>了凡四训</td>
+                        </tr>
+                        <tr>
+                            <td>梦溪笔谈</td>
+                            <td>世说新语</td>
+                            <td>天工开物</td>
+                        </tr>
+                        <tr>
+                            <td>文心雕龙</td>
+                            <td>吕氏春秋</td>
+                            <td>孔子家语</td>
+                        </tr>
+                        <tr>
+                            <td>颜氏家训</td>
+                            <td>孙膑兵法</td>
+                            <td>笑林广记</td>
+                        </tr>
+                        <tr>
+                            <td>百战奇略</td>
+                            <td>公孙龙子</td>
+                            <td>声律启蒙</td>
+                        </tr>
+
+                    </table>
+                </a>
+                <br>
+                <br>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+    </td>
+    </tr>
+
+    </table>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <font size="1" color="#676767"> © 2022 古诗文网 | 免责声明 | 意见箱 | 纠错 | 申请收录 | 邮件：service@gushiwen.cn |
+                    渝ICP备15011639号-3\
+                    <img src="image/ghs.png" alt="">
+                    | 备渝公网安备50010602501990号
+                </font>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>
